@@ -41,5 +41,20 @@ namespace TriangleTestCases
             //Assert 
             Assert.AreEqual(expected, actual);
         }
+        //UnitTest3
+        [Test]
+        public void ValidTriangle3_Input30and90and90_OutputValidTriangle()
+        {
+            //Arrange
+            int fAngle = 30, sAngle = 90, tAngle = 90;
+
+            string expected = "An isosceles triangle is formed";
+
+            //Act
+            string actual = Triangle.AnalyzeTriangle(fAngle, sAngle, tAngle);
+
+            //Assert 
+            Assert.AreEqual(expected, actual);
+        }
     }
 }

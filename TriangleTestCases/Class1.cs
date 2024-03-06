@@ -26,5 +26,20 @@ namespace TriangleTestCases
             //Assert 
             Assert.AreEqual(expected, actual);
         }
+        //UnitTest2
+        [Test]
+        public void ValidTriangle2_Input30and70and70_OutputValidTriangle()
+        {
+            //Arrange
+            int fAngle = 30, sAngle = 70, tAngle = 70;
+
+            string expected = "An isosceles triangle is formed";
+
+            //Act
+            string actual = Triangle.AnalyzeTriangle(fAngle, sAngle, tAngle);
+
+            //Assert 
+            Assert.AreEqual(expected, actual);
+        }
     }
 }
